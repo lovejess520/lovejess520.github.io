@@ -2,52 +2,56 @@
 <html lang="en">
 
 <head>
-	<link type="text/css" rel="stylesheet" href="te_amo.css">
+	<link type="text/css" rel="stylesheet" href="app.css">
 	<meta charset="UTF-8">
-    <title>selfintroduction</title>
-	<h2 >ღmi自我介紹ღ</h2>
+    <title>caculator</title>
+	<h2 >ღmi 計算機ღ</h2>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="app.js"></script>
 
 	<style type=text/css>
 <!--
 body{
-background-image:url(http://www.pagetopremiere.com/wp-content/uploads/2015/01/Screen-Shot-2015-01-16-at-1.21.50-PM.png);
+background-image:url(http://wac.450f.edgecastcdn.net/80450F/screencrush.com/files/2013/11/50-shades-of-grey-photos-dakota-johnson-portrait.jpg);
 background-position:0% 50%;
 background-attachment:fixed;
 background-repeat:no-repeat;}
 -->
 </style>
 </head>
-<body>
- 
-    <IMG SRC="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10956059_861477497208978_747293450152933441_n.jpg?oh=f3d2b753d7c62c484364cb694a3a61f1&oe=5583FD32&__gda__=1434515369_117095ef413399a1045faaca4dde7132"　WIDTH="200" HEIGHT="400">>
 
-    <div>
-    	<p id="HI" >Hola! Bonjour! 我是張伊</p>
-    	<p id="run"><marquee width=500>就讀政大資管二乙 102306038</marquee></p>
-    	<p id="purple" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我最喜歡音樂了</p>
-    	<p id="in">我會彈鋼琴和bass，鋼琴就是樂器之母嘛！彈起來的聲音多美麗啊哈哈</p>
-    	<p id="in" >至於貝斯嘛，看似隱形但是卻極重要，低頻超性感啦，我喜歡那種溫暖踏實的低音</p>
-    	<p id="in">這邊介紹幾個我喜歡的團、 歌手和樂手 OH YA</p>
-    	<p id="in"><a href=https://www.facebook.com/TimelessFusionParty>無限融合</a></p>
-    	<p id="in">大概是我最喜歡的團吧! 團員都是大師級的人啊><</br> 
-    	<p id="in">所謂爵士融合，非常之動人，聽了他們現場表演有種感動流淚的FU >_< </p>
-    	<p id="in"><a href=https://www.facebook.com/FireEX>滅火器</a></br>
-    	<p id="in">這就是爽爽的台語歌，聽起來總是很熱血啊啊啊啊，這時候就要來罐啤酒!!</p>
-    	<p id="in"><a href=https://www.facebook.com/victorwootenmusic?fref=ts>Victor Wooten </a></p>
-    	<p id="in">超級有才的貝斯手，對音樂有非常獨到的看法，超崇拜他的</p>
-    	<p id="in"><a href=https://www.facebook.com/himhebe>田馥甄 Hebe </a></p>
-    	<p id="in">喜歡她那些很有孤獨女生特別氣息的歌曲，聽了都非常心有戚戚焉，</P>
-    	<p id="in">加上他那像羽毛般柔軟漂移的嗓音，真是唱入人心啊</p>
-    	<p id="interest">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;興趣：語言 電影 卡通 踏青</p>
-    	<p id="in">我對語言滿有興趣的，雖然還沒學很多，但現在在努力進行中ㄏㄏ</p>
-    	<p id="in">每次讀語言都好快樂啊</p>
-    	<p id="in">然後雖然我讀資管系，可是對資管可一點興趣都沒有QQ</p>
-    	<p id="in">偶不喜歡數學、體育、邏輯性的東西，例如coding(?!)哈哈哈</p>
-    	<p id="in">其實我很少女，很愛看卡通，特喜歡迪士尼和宮崎駿，最喜歡小美人魚和霍爾的移動城堡><</p>
-    	<p id="in">最近看了格雷，雖然有一點重口味，但是還是愛情故事啦，我最喜歡了哈</p>
-    	<p id="in">最後，我好喜歡和我夥伴去爬山，發現新美景，空氣清新又浪漫啊!最上面的圖就是陽明山擎天崗!</p>
+<body>
+<div td align="left" >
+    <div class='large'>
+        <p id="message">0</p>
+        <p id="operator">@</p>
     </div>
-    
-    
+
+    <div>   
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b7'>7</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b8'>8</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b9'>9</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='bdiv'>/</button>
+    </div>
+    <div>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b4'>4</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b5'>5</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b6'>6</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='btim'>*</button>
+    </div>
+    <div>   
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b1'>1</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b2'>2</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b3'>3</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='bmin'>-</button>
+    </div>
+    <div>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='bclear'>C</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='b0'>0</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='bequ'>=</button>
+        <button style="width:60px;height:40px;border:2px #9999FF dashed;" id='bplus'>+</button>
+    </div>
+</div>
 </body>
 </html>
